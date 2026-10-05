@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rekla Race Tamil Nadu | ரேக்ளா ரேஸ்</title>
+<style>
+:root{--bg:#fbf7ef;--ink:#1f2a44;--muted:#5b6478;--accent:#b8321f;--gold:#e0a21b;--panel:#fffdf8;--line:#e4dccb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141a2b;--ink:#f1ead9;--muted:#a9b0c2;--accent:#ff8a6b;--gold:#f0b83a;--panel:#1c2338;--line:#2f3856}}
+:root[data-theme="dark"]{--bg:#141a2b;--ink:#f1ead9;--muted:#a9b0c2;--accent:#ff8a6b;--gold:#f0b83a;--panel:#1c2338;--line:#2f3856}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+html[lang=en] .t,html[lang=ta] .e{display:none}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Mukta","Noto Sans Tamil","Nirmala UI","Latha","Segoe UI",system-ui,sans-serif;font-size:17px;line-height:1.7}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+.lang{display:flex;gap:8px;justify-content:flex-end;padding-top:14px}
+.lang button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:6px 14px;border-radius:20px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+header{padding:28px 0 36px;border-bottom:6px solid var(--gold)}
+h1{font-size:clamp(2.4rem,8vw,4.4rem);line-height:1.15;margin:0 0 6px}
+.sub{font-size:clamp(1.2rem,4vw,1.6rem);color:var(--accent);font-weight:700;margin:0 0 14px}
+header p{max-width:60ch;color:var(--muted);margin:0}
+section{padding:36px 0 8px}
+h2{font-size:1.5rem;margin:0 0 12px}
+p{max-width:68ch}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.box{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:6px;padding:14px 16px}
+.box b{display:block;margin-bottom:2px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.tab{font:inherit;font-weight:700;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:8px 16px;border-radius:6px;cursor:pointer}
+.tab[aria-selected=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+.imgbtn{display:block;width:100%;border:1px solid var(--line);background:var(--panel);padding:0;cursor:zoom-in;border-radius:6px;overflow:hidden}
+.imgbtn img{display:block;width:100%;height:auto}
+.hint{color:var(--muted);font-size:.95rem;margin:6px 0 0}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px}
+table.rt{border-collapse:collapse;width:100%;min-width:480px;background:var(--panel)}
+.rt th,.rt td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line)}
+.rt th{background:var(--ink);color:var(--bg);position:sticky;top:0}
+.rt tbody tr:nth-child(even){background:rgba(128,128,128,.07)}
+.rt .n{text-align:right}
+.rt tfoot td{font-weight:700;background:var(--gold);color:#1f2a44}
+.story{max-width:68ch;padding-left:20px}.story li{margin-bottom:10px}
+#lk{min-width:620px}
+table.rt{margin:0}
+.panel[hidden]{display:none}
+dialog{border:0;padding:0;width:100vw;max-width:100vw;height:100%;max-height:100%;background:rgba(0,0,0,.92);color:#fff}
+dialog::backdrop{background:rgba(0,0,0,.92)}
+.dlgscroll{overflow:auto;height:100%;padding:56px 8px 24px;-webkit-overflow-scrolling:touch}
+.dlgscroll img{display:block;margin:0 auto;width:max(100%,900px);max-width:none;height:auto}
+.close{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));right:12px;font:inherit;font-size:1rem;padding:8px 16px;border-radius:20px;border:0;background:#fff;color:#111;cursor:pointer;z-index:2}
+.note{background:var(--panel);border:1px dashed var(--accent);border-radius:6px;padding:14px 16px;margin-top:14px}
+footer{margin-top:40px;padding:24px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<div class="wrap lang" role="group" aria-label="Language">
+<button id="bEn" aria-pressed="true">English</button><button id="bTa" aria-pressed="false">தமிழ்</button>
+</div>
+<header><div class="wrap">
+<h1><span class="e">Rekla Race</span><span class="t">ரேக்ளா ரேஸ்</span></h1>
+<p class="sub"><span class="e">ரேக்ளா ரேஸ் · Tamil Nadu</span><span class="t">தமிழ்நாடு · Rekla Race</span></p>
+<p class="e">Everything you need to know about the bullock cart races of Tamil Nadu: what they are, where they happen, and the yearly race schedules.</p>
+<p class="t">தமிழ்நாட்டின் ரேக்ளா (மாட்டு வண்டிப் பந்தயம்) பற்றிய தகவல்கள்: அது என்ன, எங்கு நடக்கிறது, ஆண்டு வாரியான பந்தய அட்டவணைகள்.</p>
+</div></header>
+
+<main class="wrap">
+<section>
+<h2><span class="e">What is a Rekla race?</span><span class="t">ரேக்ளா பந்தயம் என்றால் என்ன?</span></h2>
+<p class="e">A Rekla (ரேக்ளா) race is a bullock cart race. A light two-wheeled cart is pulled by a pair of bullocks while the driver stands or sits on the cart and guides them along a straight track. The fastest cart to reach the finish line wins.</p>
+<p class="e">The races are held in many parts of Tamil Nadu and are especially popular in the Kongu region, including Coimbatore, Tiruppur and Erode. They are often held around Pongal and village temple festivals.</p>
+<p class="t">ரேக்ளா என்பது மாட்டு வண்டிப் பந்தயம். இலகுவான இரு சக்கர வண்டியை ஒரு ஜோடி காளைகள் இழுக்கும். ஓட்டுநர் வண்டியில் நின்றோ அமர்ந்தோ நேரான பாதையில் காளைகளை வழிநடத்துவார். இறுதிக் கோட்டை முதலில் அடையும் வண்டி வெற்றி பெறும்.</p>
+<p class="t">இந்தப் பந்தயங்கள் தமிழ்நாட்டின் பல பகுதிகளில் நடக்கின்றன. கோவை, திருப்பூர், ஈரோடு உள்ளிட்ட கொங்குப் பகுதியில் இவை மிகவும் பிரபலம். பொங்கல் மற்றும் கோயில் திருவிழாக்களின் போது அடிக்கடி நடத்தப்படுகின்றன.</p>
+</section>
+
+<section>
+<h2><span class="e">Quick facts</span><span class="t">சுருக்கமாக</span></h2>
+<div class="grid">
+<div class="box"><b><span class="e">Animals</span><span class="t">காளைகள்</span></b><span class="e">A pair of bullocks per cart, trained for speed.</span><span class="t">ஒரு வண்டிக்கு ஒரு ஜோடி காளைகள், வேகத்திற்காகப் பழக்கப்பட்டவை.</span></div>
+<div class="box"><b><span class="e">Track</span><span class="t">பாதை</span></b><span class="e">A straight stretch of road or ground. The distance is set by the organisers.</span><span class="t">நேரான சாலை அல்லது மைதானம். தூரத்தை ஏற்பாட்டாளர்கள் முடிவு செய்வார்கள்.</span></div>
+<div class="box"><b><span class="e">Season</span><span class="t">பருவம்</span></b><span class="e">Held through the year, with many races around Pongal and local festivals.</span><span class="t">ஆண்டு முழுவதும் நடக்கும்; பொங்கல் மற்றும் உள்ளூர் திருவிழாக்களில் அதிகம்.</span></div>
+<div class="box"><b><span class="e">Entry for visitors</span><span class="t">பார்வையாளர்களுக்கு</span></b><span class="e">Usually open to the public. Confirm with each organiser.</span><span class="t">பொதுவாக அனைவரும் பார்க்கலாம். ஒவ்வொரு ஏற்பாட்டாளரிடமும் உறுதிசெய்யவும்.</span></div>
+</div>
+</section>
+
+<section>
+<h2><span class="e">Race schedules by year</span><span class="t">ஆண்டு வாரியான பந்தய அட்டவணை</span></h2>
+<p class="e">Choose a year to see the full list of races with date, village, bull category and prize.</p>
+<p class="t">ஆண்டைத் தேர்ந்தெடுத்தால் தேதி, ஊர், மாடு பிரிவு, பரிசு ஆகியவற்றுடன் முழு பட்டியலைக் காணலாம்.</p>
+<div class="tabs" role="tablist"><button class="tab" role="tab" data-y="2026" aria-selected="true">2026</button><button class="tab" role="tab" data-y="2025" aria-selected="false">2025</button><button class="tab" role="tab" data-y="2024" aria-selected="false">2024</button><button class="tab" role="tab" data-y="2023" aria-selected="false">2023</button><button class="tab" role="tab" data-y="2022" aria-selected="false">2022</button><button class="tab" role="tab" data-y="2021" aria-selected="false">2021</button></div>
+<div class="panel" id="p2026" role="tabpanel"><div class="tablewrap"><table class="rt" data-y="2026"><thead><tr><th><span class="e">No.</span><span class="t">எண்</span></th><th><span class="e">Date</span><span class="t">தேதி</span></th><th><span class="e">Place</span><span class="t">ஊர்</span></th><th><span class="e">Category</span><span class="t">மாடு</span></th><th><span class="e">Prize</span><span class="t">பரிசு</span></th></tr></thead><tbody></tbody></table></div></div><div class="panel" id="p2025" role="tabpanel" hidden><div class="tablewrap"><table class="rt" data-y="2025"><thead><tr><th><span class="e">No.</span><span class="t">எண்</span></th><th><span class="e">Date</span><span class="t">தேதி</span></th><th><span class="e">Place</span><span class="t">ஊர்</span></th><th><span class="e">Category</span><span class="t">மாடு</span></th><th><span class="e">Prize</span><span class="t">பரிசு</span></th></tr></thead><tbody></tbody></table></div></div><div class="panel" id="p2024" role="tabpanel" hidden><div class="tablewrap"><table class="rt" data-y="2024"><thead><tr><th><span class="e">No.</span><span class="t">எண்</span></th><th><span class="e">Date</span><span class="t">தேதி</span></th><th><span class="e">Place</span><span class="t">ஊர்</span></th><th><span class="e">Category</span><span class="t">மாடு</span></th><th><span class="e">Prize</span><span class="t">பரிசு</span></th></tr></thead><tbody></tbody></table></div></div><div class="panel" id="p2023" role="tabpanel" hidden><div class="tablewrap"><table class="rt" data-y="2023"><thead><tr><th><span class="e">No.</span><span class="t">எண்</span></th><th><span class="e">Date</span><span class="t">தேதி</span></th><th><span class="e">Place</span><span class="t">ஊர்</span></th><th><span class="e">Category</span><span class="t">மாடு</span></th><th><span class="e">Prize</span><span class="t">பரிசு</span></th></tr></thead><tbody></tbody></table></div></div><div class="panel" id="p2022" role="tabpanel" hidden><div class="tablewrap"><table class="rt" data-y="2022"><thead><tr><th><span class="e">No.</span><span class="t">எண்</span></th><th><span class="e">Date</span><span class="t">தேதி</span></th><th><span class="e">Place</span><span class="t">ஊர்</span></th><th><span class="e">Category</span><span class="t">மாடு</span></th><th><span class="e">Prize</span><span class="t">பரிசு</span></th></tr></thead><tbody></tbody></table></div></div><div class="panel" id="p2021" role="tabpanel" hidden><div class="tablewrap"><table class="rt" data-y="2021"><thead><tr><th><span class="e">No.</span><span class="t">எண்</span></th><th><span class="e">Date</span><span class="t">தேதி</span></th><th><span class="e">Place</span><span class="t">ஊர்</span></th><th><span class="e">Category</span><span class="t">மாடு</span></th><th><span class="e">Prize</span><span class="t">பரிசு</span></th></tr></thead><tbody></tbody></table></div></div>
+<p class="hint e">Categories: பெரியமாடு (big bull), நடுமாடு (medium bull), சின்ன மாடு (small bull), பூஞ்சிட்டு (poonjittu). Schedules are from SKR Avaniyapuram.</p>
+<p class="hint t">பிரிவுகள்: பெரியமாடு, நடுமாடு, சின்ன மாடு, பூஞ்சிட்டு. அட்டவணைகள்: SKR Avaniyapuram.</p>
+<div class="note"><span class="e">Dates and venues can change. Please confirm with the organiser before you travel.</span><span class="t">தேதிகளும் இடங்களும் மாறலாம். பயணம் செய்யும் முன் ஏற்பாட்டாளரிடம் உறுதிசெய்யவும்.</span></div>
+</section>
+
+<section>
+<h2><span class="e">SKR Avaniyapuram: races by year</span><span class="t">எஸ்.கே.ஆர். அவனியாபுரம்: ஆண்டு வாரியாகப் பந்தயங்கள்</span></h2>
+<div class="tablewrap"><table class="rt"><thead><tr><th><span class="e">Year</span><span class="t">ஆண்டு</span></th><th class="n"><span class="e">Races</span><span class="t">பந்தயங்கள்</span></th></tr></thead><tbody><tr><td>2026</td><td class="n">89</td></tr><tr><td>2025</td><td class="n">91</td></tr><tr><td>2024</td><td class="n">76</td></tr><tr><td>2023</td><td class="n">86</td></tr><tr><td>2022</td><td class="n">50</td></tr><tr><td>2021</td><td class="n">9</td></tr></tbody><tfoot><tr><td><span class="e">Total</span><span class="t">மொத்தம்</span></td><td class="n">401</td></tr></tfoot></table></div>
+<p class="hint e">Totals are as printed by the organiser. The schedule lists above may differ by a few rows.</p>
+<p class="hint t">மொத்த எண்ணிக்கை ஏற்பாட்டாளர் வெளியிட்டபடி உள்ளது. மேலே உள்ள அட்டவணைகளில் சில வரிகள் வேறுபடலாம்.</p>
+</section>
+<section>
+<h2><span class="e">Kottaiyur Ganeshan (KGF): races by year</span><span class="t">கோட்டையூர் கணேசன் (KGF): ஆண்டு வாரியாகப் பந்தயங்கள்</span></h2>
+<div class="tablewrap"><table class="rt"><thead><tr><th><span class="e">Year</span><span class="t">ஆண்டு</span></th><th class="n"><span class="e">Races</span><span class="t">பந்தயங்கள்</span></th></tr></thead><tbody><tr><td>2018</td><td class="n">9</td></tr><tr><td>2019</td><td class="n">23</td></tr><tr><td>2020</td><td class="n">12</td></tr><tr><td>2021</td><td class="n">21</td></tr><tr><td>2022</td><td class="n">71</td></tr><tr><td>2023</td><td class="n">98</td></tr><tr><td>2024</td><td class="n">88</td></tr><tr><td>2025</td><td class="n">92</td></tr><tr><td>2026</td><td class="n">91</td></tr></tbody><tfoot><tr><td><span class="e">Total</span><span class="t">மொத்தம்</span></td><td class="n">505</td></tr></tfoot></table></div>
+</section>
+<section>
+<h2><span class="e">SKR Avaniyapuram Lakhs race</span><span class="t">எஸ்.கே.ஆர். அவனியாபுரம் லட்சங்கள் பந்தயம்</span></h2>
+<p class="e">Races with a prize amount of one lakh rupees or more.</p>
+<p class="t">ஒரு லட்சம் ரூபாய் அல்லது அதற்கு மேல் பரிசுத் தொகை கொண்ட பந்தயங்கள்.</p>
+<div class="tablewrap"><table class="rt" id="lk"><thead><tr><th><span class="e">No.</span><span class="t">எண்</span></th><th><span class="e">Date</span><span class="t">தேதி</span></th><th><span class="e">Place</span><span class="t">ஊர்</span></th><th><span class="e">Category</span><span class="t">மாடு</span></th><th><span class="e">Prize</span><span class="t">பரிசு</span></th><th class="n"><span class="e">Amount</span><span class="t">தொகை</span></th></tr></thead><tbody></tbody><tfoot><tr><td colspan="5"><span class="e">Total</span><span class="t">மொத்தம்</span></td><td class="n" id="lkt"></td></tr></tfoot></table></div>
+</section>
+<section>
+<h2><span class="e">The story of SKR</span><span class="t">SKR: ஒரு வரலாறு</span></h2>
+<ul class="story"><li><span class="e">The winning journey that began in 2021 has now passed 400 wins and made history.</span><span class="t">2021-ல் தொடங்கிய வெற்றிப் பயணம், இன்று 400 வெற்றிகளைத் தாண்டி வரலாறு படைத்திருக்கிறது.</span></li><li><span class="e">SKR bulls ran for many years before, but their skill and hard work did not get the recognition they deserved.</span><span class="t">இதற்கு முன்பும் பல ஆண்டுகள் SKR மாடுகள் ஓடின; ஆனால் அவற்றின் திறமைக்கும் உழைப்புக்கும் ஏற்ற அங்கீகாரம் கிடைக்கவில்லை.</span></li><li><span class="e">After 2021 everything changed. In every village, the one name heard on the loudspeaker vans was "Avaniyapuram".</span><span class="t">2021-க்குப் பிறகு எல்லாம் மாறியது. எந்த ஊருக்குப் போனாலும் மைக் வண்டிகளில் ஒலித்த ஒரே பெயர் "அவனியாபுரம்".</span></li><li><span class="e">400 races in the last 6 years, with many wins and many records.</span><span class="t">கடந்த 6 ஆண்டுகளில் 400 பந்தயங்கள், எத்தனையோ வெற்றிகள், எத்தனையோ சாதனைகள்.</span></li><li><span class="e">The two men behind it work with the thought, "This is not for me, it is for Rekla", and truly deserve praise.</span><span class="t">"இதெல்லாம் எனக்காக இல்லை, ரேக்ளாவுக்காகத்தான்" என்ற மனநிலையோடு செயல்படும் இந்த இரண்டு மனிதர்கள் உண்மையிலேயே பாராட்டுக்குரியவர்கள்.</span></li><li><span class="e">Their friendship, journey and dedication should continue for all time, not just for 6 years.</span><span class="t">இவர்களின் நட்பும் பயணமும் அர்ப்பணிப்பும் 6 வருடங்களுக்கு மட்டும் அல்ல, காலம் முழுவதும் தொடர வேண்டும்.</span></li><li><span class="e">SKR is not just a name. It is a history that lives as long as Rekla racing does.</span><span class="t">SKR என்பது ஒரு பெயர் அல்ல; ரேக்ளா ரேஸ் இருக்கும் வரை உயிரோடு வாழும் ஒரு வரலாறு!</span></li></ul>
+</section>
+<section>
+<h2><span class="e">For spectators</span><span class="t">பார்வையாளர்களுக்கு</span></h2>
+<p class="e">Stand behind the barriers and keep well away from the track. Carts and animals move fast and can change direction suddenly. Keep children close, avoid flash photography near the bullocks, and follow the organisers' instructions.</p>
+<p class="t">தடுப்புகளுக்குப் பின்னால் நின்று பாதையிலிருந்து தள்ளியிருங்கள். வண்டிகளும் காளைகளும் வேகமாக ஓடும்; திடீரென திசை மாறலாம். குழந்தைகளை அருகிலேயே வைத்திருங்கள், காளைகள் அருகே ஃபிளாஷ் புகைப்படம் எடுப்பதைத் தவிருங்கள், ஏற்பாட்டாளர்களின் அறிவுரையைப் பின்பற்றுங்கள்.</p>
+</section>
+
+<section>
+<h2><span class="e">Rules and permissions</span><span class="t">விதிகளும் அனுமதிகளும்</span></h2>
+<p class="e">Rules for animal sports can change, and organisers usually need local permission. Check current requirements with the district administration or the event organisers before you attend or host a race.</p>
+<p class="t">விலங்குகள் பங்கேற்கும் விளையாட்டுகளுக்கான விதிகள் மாறலாம்; ஏற்பாட்டாளர்களுக்கு பொதுவாக உள்ளூர் அனுமதி தேவை. பந்தயத்தைக் காண அல்லது நடத்த முன், மாவட்ட நிர்வாகம் அல்லது ஏற்பாட்டாளர்களிடம் தற்போதைய நிபந்தனைகளைச் சரிபார்க்கவும்.</p>
+</section>
+</main>
+
+<dialog id="dlg"><button class="close" id="cl"><span class="e">Close</span><span class="t">மூடு</span></button><div class="dlgscroll"><img id="big" alt=""></div></dialog>
+<footer><div class="wrap"><span class="e">Rekla Race Tamil Nadu · Information page for everyone. Details are provided by the organisers.</span><span class="t">ரேக்ளா ரேஸ் தமிழ்நாடு · அனைவருக்குமான தகவல் பக்கம். விவரங்கள் ஏற்பாட்டாளர்களால் வழங்கப்படுபவை.</span></div></footer>
+<script>
+var D={
+2026:`01-01|புலியடித்தம்பம்|P|2
+01-01|புலியடித்தம்பம்|S|2
+04-01|பூவாளி|P|1
+11-01|அய்யம்பாளையம்|P|1
+14-01|எருமப்பட்டி|P|1
+17-01|கடியப்பட்டி|P|2
+17-01|கடியப்பட்டி|S|1
+18-01|நெற்புதப்பட்டி|P|2
+24-01|ஆற்குப்பட்டி|P|4
+26-01|பூவந்தி|P|1
+29-01|சஞ்சய் நகர்|P|1
+29-01|சஞ்சய் நகர்|S|2
+01-02|ஊமச்சிகுளம்|P|1
+07-02|வெள்ளனூர்|P|4
+07-02|வெள்ளனூர்|S|2
+08-02|வீரபாஞ்சான்|P|3
+15-02|நரசிங்கம்|P|3
+15-02|நரசிங்கம்|S|2
+16-02|ஆலத்துப்பட்டி|P|1
+17-02|அரண்மனைப்பட்டி|P|2
+04-03|ஏம்பல்|P|4
+04-03|ஏம்பல்|S|4
+14-03|உரங்காண்பட்டி|P|1
+25-03|ஆதனூர்|P|2
+26-03|இளஞ்சாவூர்|P|2
+26-03|இளஞ்சாவூர்|S|3
+28-03|பரானி|P|2
+06-04|மணச்சை|P|1
+06-04|மணச்சை|S|4
+09-04|நல்லாங்குடி|P|1
+09-04|நல்லாங்குடி|N|4
+09-04|நல்லாங்குடி|S|2
+09-04|நல்லாங்குடி|F|2
+24-04|கட்டக்காளைப்பட்டி|P|2
+01-05|கொல்லங்குடி|P|1
+01-05|கொல்லங்குடி|S|1
+02-05|பணகுடி|P|1
+06-05|சித்திவயல்|P|1
+07-05|திருப்பத்தூர்|P|3
+07-05|திருப்பத்தூர்|S|3
+09-05|அலவாக்கோட்டை|P|2
+10-05|கல்லல்|P|3
+13-05|வைரிவயல்|P|2
+13-05|நெடுங்குடி|S|2
+14-05|தெற்குடியிருப்பு|P|1
+14-05|தெற்குடியிருப்பு|S|3
+17-05|வள்ளியூர்|P|2
+27-05|சித்திவயல்|P|1
+27-05|சித்திவயல்|S|1
+28-05|கக்கத்தூர்|P|1
+28-05|கக்கத்தூர்|S|2
+31-05|வடகுடி|P|1
+07-06|குளப்பட்டி|P|1
+07-06|குளப்பட்டி|S|2
+13-05|அரிமளம்|P|2
+14-06|வம்பரப்பட்டி|P|2
+14-06|வம்பரப்பட்டி|N|2
+20-06|தேதுப்பட்டி|P|1
+20-06|தெதுப்பட்டி|S|2
+20-06|தெதுப்பட்டி|S|2
+28-06|கண்டவராயன்பட்டி|P|1
+30-06|கழனிவாசல்|P|1
+30-06|கழனிவாசல்|N|1
+30-06|கழனிவாசல்|S|2
+30-06|கழனிவாசல்|F|4
+06-07|மல்லாக்கோட்டை|P|4
+11-07|சிவகங்கை|P|1
+11-07|சிவகங்கை|S|2
+12-07|புதியப்பத்தூர்|S|4
+15-07|கழனிவாசல்|P|1
+15-07|கழனிவாசல்|S|5
+15-07|கழனிவாசல்|S|6
+17-07|கொட்டகுடி|P|1
+19-07|திருப்பத்தூர்|S|1
+25-07|அண்ணாமலைநகர்|P|1
+29-07|முத்துப்பட்டி|P|1
+29-07|முத்துப்பட்டி|S|2
+30-07|வாணியங்குடி|P|1
+30-07|வாணியங்குடி|S|1
+01-08|கட்டாம்பூர்|P|3
+08-08|பாகனேரி|S|3
+09-08|திருப்பத்தூர்|P|1
+12-08|கானாப்பூர்|P|1
+12-08|கானாப்பூர்|S|3
+19-08|கிழவளவு|P|5
+19-08|கிழவளவு|S|5
+25-08|கொல்லங்குடி|F|2
+30-08|ரோஸ்-நதர்|P|5
+30-08|ரோஸ்-நதர்|S|2`,
+2025:`01-01|காளாப்பூர்|P|1
+01-01|காளாப்பூர்|S|2
+04-01|வைப்பூர்|P|1
+13-01|எருமபட்டி|S|3
+13-01|எருமபட்டி|P|1
+16-01|தேவரம்பூர்|P|1
+16-01|தேவரம்பூர்|S|1
+16-01|கடியபட்டி|P|1
+19-01|அங்கலக்கோட்டை|S|1
+19-01|அங்கலக்கோட்டை|P|1
+27-01|பேரூரணி|P|1
+02-02|வேலங்குடி|P|4
+09-02|நரசிங்கம்|P|1
+22-02|ஓட்டப்பிடாரம்|P|2
+24-02|லட்சுமிபுரம்|S|1
+27-02|ஆலத்தப்பட்டி|S|1
+09-03|கோட்டையூர்|P|1
+09-03|கோட்டையூர்|S|1
+14-03|எம்பால்|S|1
+16-03|புதூர்பாண்டியபுரம்|P|1
+20-03|மித்திரவயல்|P|1
+20-03|மித்திரவயல்|N|3
+20-03|மித்திரவயல்|S|2
+22-03|பராதலி|P|1
+23-03|செருபாலக்காடு|P|1
+30-03|கோரவயல்|G|3
+30-03|கோரவயல்|S|1
+05-04|கழனிவாசல்|S|4
+09-04|நல்லங்குடி|F|1
+11-04|நகரம்பட்டி|S|1
+13-04|அம்பாள்புரம்|P|1
+14-04|கடியப்பட்டி|P|4
+18-04|திருப்பத்தூர்|S|1
+25-04|கட்டளைப்பட்டி|P|2
+27-04|ஆரவயல்|P|4
+27-04|ஆரவயல்|S|2
+30-04|சித்தனூர்|P|1
+01-05|விராலிக்காடு|P|1
+01-05|விராலிக்காடு|S|1
+03-05|மணியாச்சி|P|1
+07-05|நலத்துவா|P|2
+10-05|தேதத்துப்பட்டி|P|1
+10-05|தேதத்துப்பட்டி|S|3
+11-05|கொல்லங்குடி|P|4
+13-05|செக்கனிங்கம்பூர்|P|4
+14-05|சிறுவயல்|P|1
+18-05|மனாசை|P|1
+18-05|மனரசை|S|2
+21-05|ஆலங்குடி|P|1
+28-05|நெடுங்குடி|P|1
+29-05|குத்தலூர்|P|2
+01-06|மதுகுபட்டி|P|3
+08-06|கீழக்கோட்டை|P|2
+14-06|கருவேலங்குறிச்சி|P|1
+14-06|கருவேலங்குறிச்சி|S|2
+02-07|கழனிவாசல்|P|1
+02-07|கழனிவாசல்|N|1
+02-07|கழனிவாசல்|F|3
+10-07|பாகனேரி|P|4
+12-07|சிவகங்கை|P|1
+14-07|சாக்கோட்டை|P|3
+14-07|சாக்கோட்டை|S|1
+16-07|கழனிவாசல்|P|1
+16-07|கழனிவாசல்|S|1
+20-07|திருப்பத்தூர்|S|4
+24-07|காளாப்பூர்|P|1
+26-07|அண்ணாமலைநகர்|P|2
+27-07|காரையூர்|P|1
+10-08|கடியாப்பட்டி|P|1
+16-08|கைகுறிஞ்சி|P|1
+16-08|கைகுறிஞ்சி|S|3
+24-08|தெற்கு கல்மேடு|P|2
+08-09|வடகுடி|P|1
+16-09|செக்கலை|S|1
+27-09|திருவேகம்பத்தூர்|P|2
+28-09|கோவிலூர்|P|1
+05-10|சிங்கம்புணரி|P|2
+07-10|சிறுவயல்|P|1
+12-10|மேலப்பட்டிமுகுடி|P|1
+12-10|மேலப்பட்டிமுகுடி|S|3
+27-10|கடலாடி|P|1
+05-11|பருத்தியூர்|P|4
+05-11|பருத்தியூர்|S|3
+05-11|பருத்தியூர்|S|1
+15-11|மணல்மேல்குடி|P|4
+16-11|தேவகோட்டை|P|1
+16-11|தேவகோட்டை|S|2
+16-11|மதுரை|P|3
+30-11|திருப்பத்தூர்|P|4
+14-12|கோவிலூர்|P|3
+26-12|வெள்ளலூர்|P|2
+28-12|பூண்டி|P|2
+28-12|பூண்டி|S|2`};
+D[2024]=`01-01|காளாப்பூர்|P|1
+01-01|காளாப்பூர்|S|1
+02-01|மணல்மேல்குடி|P|1
+04-01|வைப்பர்|P|4
+06-01|பூவந்தி|P|1
+14-01|அய்யம்பாளையம்|P|2
+17-01|கடியப்பட்டி|P|1
+17-01|கடியபட்டி|S|1
+25-01|திருவேலன்குடி|P|3
+25-01|திருவேலன்குடி|S|1
+28-01|நரசிங்கம்|P|1
+02-02|சக்கவயல்|P|2
+02-02|சக்கவயல்|S|1
+11-02|சிவகங்கை(பி)|P|3
+11-02|சிவகங்கை(பி)|S|1
+18-02|தேக்குப்பட்டி|P|1
+10-04|நல்லங்குடி|S|3
+10-04|நல்லங்குடி|B|1
+11-05|தேக்கம்பட்டி|P|1
+12-05|காளையார்கோவில்|S|1
+12-05|காளையார்கோவில்|P|1
+15-05|ஆளவிளான்பட்டி|S|2
+15-05|ஆளவிளான்பட்டி|P|1
+19-05|மதகுபட்டி|P|2
+19-05|மதகுபட்டி|S|3
+20-05|ஆலங்குடி|P|2
+20-05|ஆலங்குடி|S|1
+23-05|காளையார்கோவில்|P|1
+23-05|காளையார்கோவில்|S|2
+29-05|கானாடுகாத்தான்|P|1
+30-05|காத்தவூர்|P|1
+01-06|ஆவடையார்கோவில்|N|1
+07-06|மானாமதுரை|S|1
+13-06|கருமொழி|P|1
+13-06|கருமொழி|S|3
+14-06|வேலாயுதப்பட்டினம்|P|1
+22-06|தேக்கம்பாடி|S|1
+22-06|தேக்கம்பாடி|S|1
+23-06|பாகனேரி|P|1
+26-06|வீரமங்கலம்|P|1
+27-06|சாக்கோட்டை|S|1
+29-06|சிவகங்கை|P|1
+02-07|கழனிவாசல்|N|1
+03-07|கழனிவாசல்|P|1
+10-07|சத்திரப்பட்டி|S|1
+11-07|வேலங்குடி|P|1
+11-07|வேலங்குடி|P|1
+21-07|குளத்தூர்|S|1
+06-08|சோலைக்குடிமிருப்பு|P|1
+25-08|ஊமச்சிகுளம்|P|1
+28-08|கொல்லங்குடி|P|1
+08-09|காளையார்கோவில்|P|1
+12-09|கிழவணியள்குடி|P|1
+16-09|கருவேலங்குறிச்சி|P|1
+16-09|கருவேலங்குறிச்சி|S|1
+21-09|மேட்டுப்பட்டி|P|1
+22-09|காளாப்பூர்|S|1
+06-10|சந்தரராஜன்பட்டி|P|4
+13-10|சிங்கம்புணரி|S|1
+27-10|கடலாடி|P|1
+27-10|கடலாடி|N|2
+02-11|செம்பனூர்|P|1
+03-11|பெரியகன்னூர்|P|1
+04-11|சிவகங்கை|P|1
+09-11|மணல்மேல்குடி|N|3
+11-11|கண்டனிப்பட்டி|P|1
+17-11|திருப்பத்தூர்|P|1
+24-11|காளையார்கோவில்|P|1
+01-12|திருப்பத்தூர்|P|1
+01-12|திருப்பத்தூர்|S|1
+08-12|தேவகோட்டை|N|3
+08-12|தேவகோட்டை|P|1
+15-12|கோவிலூர்|P|1
+15-12|கோவிலூர்|S|2`;
+D[2023]=`01-01|காளாப்பூர்|P|1
+04-01|வைப்பர்|P|2
+12-01|காளையார்கோவில்|S|3
+17-01|மானகிரி|S|1
+22-01|அய்யம்பாளையம்|P|1
+22-01|அய்யம்பாளையம்|S|3
+29-01|சிவகங்கை|P|2
+04-02|புதுக்கோட்டை|P|1
+05-02|கரம்பேட்டை|P|3
+19-02|ஆலத்துப்பட்டி|P|2
+20-02|அரண்மனைப்பட்டி|S|1
+20-02|செம்பனூர்|P|1
+19-03|அய்யம்பாளையம்|P|1
+09-04|ஊமச்சிகுளம்|S|1
+16-04|எழகுடிப்பட்டி|S|1
+21-04|கல்லல்|S|4
+26-04|மானகிரி|P|4
+26-04|மானகிரி|S|1
+30-04|சோழவந்தான்|P|1
+30-04|சனவேலி|P|1
+03-05|பாகனேரி|P|1
+07-05|திருப்பூரணிக்காடு|S|1
+10-05|சிறுவயல்|P|1
+13-05|தேக்கம்பட்டி|P|1
+13-05|தேக்கம்பட்டி|S|1
+17-05|ஆளவிளன்பட்டி|F|4
+21-05|மணச்சை|P|1
+30-05|கடலாடி|P|2
+31-05|கானாகொத்தான்|P|1
+31-05|கானாகொத்தான்|S|3
+03-06|அப்பர்த்திருப்பதி|P|1
+07-06|செங்கரை|P|1
+11-06|ss கோட்டை|P|2
+17-06|கானாகொத்தான்|P|1
+17-06|கானாகொத்தான்|S|1
+18-06|வல்லத்திருக்கோட்டை|P|1
+22-06|புதுநிலைப்பட்டி|S|2
+28-06|இலங்குடி|P|1
+01-07|வம்பரப்பட்டி|P|1
+02-07|எட்டடாபுரம்|P|4
+05-07|கழனிவாசல்|P|1
+05-07|கழனிவாசல்|S|2
+12-07|கழனிவாசல்|P|1
+12-07|கழனிவாசல்|S|1
+16-07|செஞ்சை|P|1
+16-07|செஞ்சை|S|4
+22-07|வைரவன்பட்டி|N|1
+22-07|வைரவன்பட்டி|S|1
+22-07|வைரவன்பட்டி|S|2
+23-07|திருக்கோஷ்டியூர்|P|1
+28-07|பெருநாழி|P|2
+03-08|கொல்லங்குடி|P|1
+06-08|சனையக்காடு|P|1
+15-08|கீழநிலைக்கோட்டை|P|1
+15-08|கீழநிலைக்கோட்டை|S|1
+23-08|துரவங்குறிச்சி|P|1
+23-08|துரவங்குறிச்சி|S|3
+26-08|காளையார்கோவில்|P|1
+30-08|கொல்லங்குடி|P|1
+30-08|கொல்லங்குடி|S|1
+06-09|காளையார்கோவில்|P|1
+06-09|காளையார்கோவில்|N|1
+08-09|திருப்பத்தூர்|P|3
+13-09|தெற்கு கல்மேடு|P|1
+17-09|சத்திரப்பட்டி|P|1
+20-09|மீமிசல்|P|1
+23-09|இரவிமங்கலம்|P|1
+28-09|காளையார்கோவில்|P|1
+01-10|அமந்தாங்கி|P|2
+05-10|ஈசனூர்|P|1
+12-10|புதுப்பட்டி|T|4
+28-10|கடலாடி|P|2
+28-10|கடலாடி|N|1
+29-01|கட்டுமாவடி|P|1
+04-11|சிங்கம்புணரி|P|1
+18-11|மண்டல்மேல்குடி|P|1
+26-11|தேவகோட்டை|P|1
+02-12|மனசை|P|1
+02-12|மணச்சை|S|3
+02-12|மணச்சை|S|2
+02-12|திருப்பத்தூர்|P|1
+10-12|கீழவளவு|P|2
+17-12|கோவிலூர்|P|1
+17-12|கோவிலூர்|S|1
+25-12|மாணாமதுரை|P|3
+29-12|கட்டுமாவடி|N|1`;
+D[2022]=`02-01|மணல்மேல்குடி|P|1
+02-01|மணல்மேல்குடி|N|1
+02-01|மணல்மேல்குடி|S|1
+04-01|வைப்பர்|P|1
+17-01|நாலுகல்மண்டபம்|P|2
+17-01|நாலுகல்மண்டபம்|N|2
+28-02|மணல்மேல்குடி|P|1
+06-03|திருமயம்|P|1
+06-03|திருமயம்|S|2
+05-04|மேலூர்|P|1
+05-04|மேலூர்|S|1
+01-05|மாவடுகுறிச்சி|P|3
+01-05|மாவடுகுறிச்சி|S|1
+15-05|அறந்தாங்கி|S|1
+22-05|கருப்பாயூரணி|P|1
+26-05|கூத்தலூர்|P|1
+05-06|திருப்புவனம்|P|1
+19-06|ஊமச்சிகுளம்|P|1
+19-06|ஊமச்சிகுளம்|S|1
+06-07|கழனிவாசல்|P|1
+10-07|காத்திகிணறு|P|2
+10-07|காத்திகிணறு|S|4
+15-07|சிவகங்கை|P|2
+15-07|சிவகங்கை|S|2
+17-07|சாக்கோட்டை|P|3
+17-07|சாக்கோட்டை|N|1
+27-07|காரைக்குடி|P|4
+27-07|காரைக்குடி|S|1
+01-08|வைரவன்பட்டி|P|1
+01-08|வைரவன்பட்டி|S|1
+07-08|கடியபட்டி|P|1
+07-08|கடியபட்டி|S|1
+08-08|புதுயயல்|P|1
+13-08|தெற்கு கல்மேடு|P|1
+20-08|காளையார்கோவில்|P|1
+23-08|பாகனேரி|P|1
+01-09|சேதுராஜபுரம்|P|2
+08-09|புதுயயல்|P|1
+08-09|புதுயயல்|S|1
+08-10|புதுப்பட்டி|P|1
+27-10|கடலாடி|P|1
+27-10|கடலாடி|N|1
+27-10|கடலாடி|S|4
+08-11|வம்பரப்பட்டி|S|2
+27-11|திருப்பத்தூர்|P|1
+27-11|திருப்பத்தூர்|S|3
+18-12|கோவிலூர்|P|1
+18-12|கோவிலூர்|S|1
+24-12|மணல்மேல்குடி|P|3
+31-12|அரிமளம்|P|1`;
+D[2021]=`15-07|பாகனேரி|P|1
+15-08|கீழமுடிமன்|P|1
+31-08|கண்டனிப்பட்டி|P|1
+22-09|திருவாத்தூர்|P|1
+27-10|கடலாடி|P|1
+18-11|புதுக்கோட்டை|P|1
+18-11|புதுக்கோட்டை|S|1
+12-12|கழனிவாசல்|P|1
+12-12|கழனிவாசல்|S|1`;
+
+var LK=`27-10-2021|கடலாடி|P|1|100000
+04-01-2022|வைப்பர்|P|1|100000
+06-03-2022|திருமயம்|P|1|100000
+05-04-2022|மேலூர்|P|1|100000
+22-05-2022|கருப்பாயூரணி|P|1|200000
+19-06-2022|ஊமச்சிகுளம்|P|1|225000
+23-08-2022|பாகனேரி|P|1|100000
+27-10-2022|கடலாடி|P|1|100000
+18-12-2022|கோவிலூர்|P|1|100000
+31-12-2022|அரிமளம்|P|1|100000
+22-01-2023|அய்யம்பாளையம்|P|1|100000
+09-04-2023|ஊமச்சிகுளம்|S|1|100000
+19-04-2023|அய்யம்பாளையம்|P|1|100000
+29-04-2023|சோழவந்தன்|P|1|200000
+30-04-2023|சனவேலி|P|1|100000
+01-07-2023|வம்பரப்பட்டி|P|1|100000
+17-12-2023|கோவிலூர்|P|1|100000
+28-01-2024|நாச்சிங்கம்|P|1|100000
+25-08-2024|ஊமச்சிகுளம்|P|1|200000
+21-09-2024|மேட்டுப்பட்டி|P|1|100000
+27-10-2024|கடலாடி|P|1|160000
+15-12-2024|கோவிலூர்|P|1|100000
+04-01-2025|வைப்பர்(p)|P|1|111266
+09-02-2025|நாச்சிங்கம்|P|1|100000
+16-03-2025|புதூர்பாண்டியபுரம்|P|1|100000
+23-03-2025|சேருபாலக்காடு|P|1|100000
+03-05-2025|மணியாச்சி|P|1|100000
+27-10-2025|கடலாடி|P|1|170000
+11-01-2026|அய்யம்பாளையம்|P|1|100000
+01-02-2026|ஊமச்சிகுளம்|P|1|200000`;
+var CAT={P:['Big bull','பெரியமாடு'],S:['Small bull','சின்ன மாடு'],N:['Medium bull','நடுமாடு'],F:['Poonjittu','பூஞ்சிட்டு'],G:['Pon sittu','பொன் சிட்டு'],B:['Pungu sittu','புங்குசிட்டு'],T:['4 teeth','4 பல்']};
+(function(){
+var sum=0,lh='';LK.split('\n').forEach(function(l,i){var f=l.split('|'),c=CAT[f[2]];sum+=+f[4];lh+='<tr><td>'+(i+1)+'</td><td>'+f[0]+'</td><td>'+f[1]+'</td><td><span class="e">'+c[0]+'</span><span class="t">'+c[1]+'</span></td><td>'+f[3]+'</td><td class="n">\u20b9'+(+f[4]).toLocaleString('en-IN')+'</td></tr>'});document.querySelector('#lk tbody').innerHTML=lh;document.getElementById('lkt').textContent='\u20b9'+sum.toLocaleString('en-IN');
+document.querySelectorAll('table.rt[data-y]').forEach(function(tb){var y=tb.dataset.y,h='';D[y].split('\n').forEach(function(l,i){var f=l.split('|'),c=CAT[f[2]];h+='<tr><td>'+(i+1)+'</td><td>'+f[0]+'-'+y+'</td><td>'+f[1]+'</td><td><span class="e">'+c[0]+'</span><span class="t">'+c[1]+'</span></td><td>'+f[3]+'</td></tr>'});tb.tBodyes=0;tb.querySelector('tbody').innerHTML=h});
+var d=document,h=d.documentElement;
+function setLang(l){h.lang=l;d.getElementById('bEn').setAttribute('aria-pressed',l==='en');d.getElementById('bTa').setAttribute('aria-pressed',l==='ta');try{localStorage.setItem('rekla-lang',l)}catch(e){}}
+d.getElementById('bEn').onclick=function(){setLang('en')};
+d.getElementById('bTa').onclick=function(){setLang('ta')};
+try{var s=localStorage.getItem('rekla-lang');if(s==='ta'||s==='en')setLang(s)}catch(e){}
+var tabs=d.querySelectorAll('.tab');
+tabs.forEach(function(t){t.onclick=function(){tabs.forEach(function(x){x.setAttribute('aria-selected',x===t)});d.querySelectorAll('.panel').forEach(function(p){p.hidden=p.id!=='p'+t.dataset.y})}});
+var dlg=d.getElementById('dlg'),big=d.getElementById('big');
+d.querySelectorAll('.imgbtn').forEach(function(b){b.onclick=function(){big.src=b.querySelector('img').src;dlg.showModal()}});
+d.getElementById('cl').onclick=function(){dlg.close()};
+})();
+</script>
+</body>
+</html>
